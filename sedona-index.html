@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Седона</title>
     <link rel="stylesheet" href=css/style.css>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="main-header-layout container">
             <nav class="main-navigation">
                 <ul>
                     <li><a href="#">Информация</a></li>
@@ -16,20 +17,20 @@
                     <li><a href="#">Гостиницы</a></li>
                 </ul>
             </nav>
-            <img src="#" alt="City of Sedona" class="header-logo" width="138" height="70">
+            <img src="img/header-logo.png" alt="City of Sedona" class="header-logo" width="138" height="70">
         </div>
     </header>
     <main class="container">
-        <img src="#" alt="Welcome to the gorgeous Sedona!" class="sedona-logo" width="1200" height="508">
-        <img src="#" alt="" class="white-mask" width="1200" height="57">
+        <img src="img/main-background.jpg" alt="Welcome to the gorgeous Sedona!" class="sedona-logo" width="1200" height="508">
+        <img src="img/white-mask.png" alt="" class="white-mask" width="1200" height="57">
         <div class="promo-block">
             <span class="promo">Седона - небольшой городок в Аризоне, заслуживающий большего!</span>
-            <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="features-block">
             <section class="features-item">
-                <div class="features-text">
-                    <span class="heading">Настоящий городок</span>
+                <div class="features-text-first">
+                    <span class="heading">Настоящий <br>городок</span>
                     <span>№1</span>
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
@@ -38,25 +39,25 @@
                 </div>
             </section>
             <section class="features-item">
-                <div class="advantages">
+                <div class="picture-advantages">
                     <img src="img/house.png" alt="" width="75" height="72">
                     <span class="heading">Жилье</span>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
-                <div class="advantages">
+                <div class="picture-advantages">
                     <img src="img/burger.png" alt="" width="74" height="70">
                     <span class="heading">Еда</span>
                     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
-                <div class="advantages">
+                <div class="picture-advantages">
                     <img src="img/gifts.png" alt="" width="64" height="76">
                     <span class="heading">Сувениры</span>
                     <p>Не только китайского, но и местного производства!</p>
                 </div>
             </section>
-            <section class="features-item">
-                <div class="features-text">
-                    <span class="heading">Там есть мост дьявола</span>
+            <section class="features-item-reverse">
+                <div class="features-text-second">
+                    <span class="heading">Там есть <br>мост дьявола</span>
                     <span>№2</span>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
@@ -66,17 +67,17 @@
             </section>
             <section class="features-item">
                 <div class="advantages">
-                    <span class="heading">Небольшая площадь</span>
+                    <span class="heading">Небольшая <br> площадь</span>
                     <span>№3</span>
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="advantages">
-                    <span class="heading">Красивая дорога</span>
+                    <span class="heading">Красивая <br> дорога</span>
                     <span>№4</span>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="advantages">
-                    <span class="heading">Мало туристов</span>
+                    <span class="heading">Мало <br> туристов</span>
                     <span>№5</span>
                     <p>Большинство едет в Гранд-Каньон и толпится там</p>
                 </div>
@@ -86,8 +87,9 @@
             <div class="find-us">
                 <span class="huge-promo">Заинтересовались?</span>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <button type="button" class="hotel-search">Поиск гостиницы в Седоне</button>
             </div>
-            <button type="button" class="hotel-search">Поиск гостиницы в Седоне</button>
+            
             <div class="search-window">
                 <form action="" method="post">
                 Дата заезда: <input type="date" name="date"> 
@@ -104,8 +106,8 @@
             </div>
         </div>
     </main>
-    <footer class="main-footer">
-        <div class="container">
+    <footer class="main-footer container">
+        <div class="main-footer-layout">
             <section class="our-hashtag">
                 #VisitSedona
             </section>

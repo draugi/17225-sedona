@@ -4,6 +4,7 @@ body {
     line-height: 26px;
     color: #333333;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -20,4 +21,115 @@ h2 {
     line-height: 21px;
     color: #000000;
     font-weight: 700;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.main-header-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.promo-block {
+    background-color: #fff;
+    padding: 45px 355px 50px 355px;
+    text-align: center;
+}
+
+
+.promo-block span {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+
+.promo-block p {
+    margin: 0;
+    margin-top: 25px;
+}
+
+
+
+
+.features-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    
+}
+
+
+.heading {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    
+}
+
+.features-text-first {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 50px 60px;
+    text-align: center;
+    background-color: #81b3d2;
+
+}
+
+.features-text-second {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.features-item-reverse {
+    display: flex;
+   flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #81b3d2;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    padding: 40px 70px 56px 70px;
+    background-color: #eeeeee;
+}
+
+
+.picture-advantages {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    padding: 60px 75px 80px 75px;
+}
+
+.picture-advantages img {
+    margin-bottom: 28px;
+}
+
+
+.find-us {
+    text-align: center;
+}
+
+.main-footer-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 130px;
+    background-color: blueviolet;
 }
