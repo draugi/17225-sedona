@@ -55,46 +55,48 @@ h2 {
 }
 
 
-
-
 .features-item {
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff;
-    
+    background-color: #ffffff; 
 }
 
 
 .heading {
     font-size: 21px;
     line-height: 26px;
-    font-weight: 700;
-    
+    font-weight: 700;  
 }
 
 .features-text-first {
     display: flex;
     flex-direction: column;
     width: 400px;
-    padding: 50px 60px;
+    padding: 53px 60px 0 60px;
     text-align: center;
     background-color: #81b3d2;
+}
 
+.features-image {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
 }
 
 .features-text-second {
     display: flex;
     flex-direction: column;
     width: 400px;
-    padding: 50px 50px;
+    padding: 58px 40px 0 40px;
     text-align: center;
+    background-color: #81b3d2; 
 }
 
 .features-item-reverse {
     display: flex;
-   flex-direction: row-reverse;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: #81b3d2;
+    height: 247px;
 }
 
 .advantages {
@@ -103,7 +105,7 @@ h2 {
     width: 400px;
     text-align: center;
     align-items: center;
-    padding: 40px 70px 56px 70px;
+    padding: 40px 60px 56px 60px;
     background-color: #eeeeee;
 }
 
@@ -114,7 +116,7 @@ h2 {
     width: 400px;
     text-align: center;
     align-items: center;
-    padding: 60px 75px 80px 75px;
+    padding: 60px 50px 80px 50px;
 }
 
 .picture-advantages img {
@@ -124,12 +126,157 @@ h2 {
 
 .find-us {
     text-align: center;
+    background-color: #fff;
+    padding-top: 50px;
 }
+
+.find-us span {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.find-us p {
+    width: 438px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+
+.hotel-search {
+    display: block;
+    margin: 0 auto;
+    width: 570px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    background-color: #766357;
+    color: #fff;
+}
+
+.search-window {
+    display: block;
+    width: 570px;
+    margin: 0 auto; 
+    padding: 55px; 
+}
+
+.find-hotel {
+    display: block;
+    width: 460px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #81b3d2;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 
 .main-footer-layout {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 35px 130px;
-    background-color: blueviolet;
 }
+
+
+/* Отели */
+
+.infrastructure-block {
+    width: 240px;
+}
+
+.house-block {
+    width: 288px;
+    margin-right: 200px;
+}
+
+.price-filter {
+    width: 330px;
+}
+
+.search-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 73px;
+}
+
+.assortment-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 73px;  
+}
+
+.assortment-heading {
+    width: 164px;
+}
+
+.assortment {
+    display: flex;
+    width: 572px;
+}
+
+.sortment {
+    margin-left: 50px;
+}
+
+.assortment ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.assortment-arrows {
+    width: 240px;
+    margin-left: 288px;
+    text-align: right;
+}
+
+.filtered-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtered-item {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 73px;
+}
+
+.place-picture {
+    display: flex;
+    width: 135px;
+}
+
+.place-description {
+    display: flex;
+    flex-direction: column;
+    width: 363px;
+    margin-left: 30px;
+}
+
+.place-block {
+    display: flex;
+    width: 258px;
+    text-align: left;
+}
+
+.place-heading {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.rating {
+    width: 240px;
+    margin-left: 288px;
+    text-align: right;
+}
+
