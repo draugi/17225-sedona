@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Отели Седоны</title>
+    <link rel="stylesheet" href=css/normalize.css>
     <link rel="stylesheet" href="css/style.css">
      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-     <header class="main-header">
-        <div class="container">
+        <div class="container-wrapper">
+      <header class="main-header">
+        <div class="main-header-layout container">
             <nav class="main-navigation">
-                <ul>
+                <ul class="main-navigation-list">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
-                    <li><a href="#">Гостиницы</a></li>
+                    <li class="menu-active">Гостиницы</li>
                 </ul>
+                <a href="sedona-index.html" class="header-logo">
+                	<img src="img/header-logo.png" alt="City of Sedona" width="138" height="70">
+                </a>
             </nav>
-            <img src="img/header-logo.png" alt="City of Sedona" class="header-logo" width="138" height="70">
         </div>
     </header>
     <main class="container">
         <div class="search-filter">
             <div class="infrastructure-block">
-            <form action="" method="post">
-                Инфраструктура: <br>
+            <form action="hotel-filter.html" method="post">
+                <span class="filter-heading">Инфраструктура:</span>  <br>
                 <input type="checkbox" name="infrastructure1" id="pool" checked> 
                 <label for="pool">Бассейн</label> <br>
                  <input type="checkbox" name="infrastructure2" id="parking">
@@ -34,8 +38,8 @@
             </form>
             </div>
             <div class="house-block">
-            <form action="" method="post">
-                Тип жилья: <br>
+            <form action="hotel-filter.html" method="post">
+                <span class="filter-heading">Тип жилья:</span> <br>
                 <input type="checkbox" name="place1" id="hotel" checked>
                 <label for="hotel">Гостиница</label> <br>
                 <input type="checkbox" name="place2" id="motel" checked>
@@ -45,14 +49,19 @@
             </form>
             </div>
             <div class="price-filter">
-                Стоимость в сутки (Р): <br>
-                <label>
-                    <input type="text" value="От 0">
-                </label>
-                <label>
-                    <input type="text" value="До 3000">
-                </label>
-            <a href="#" class="price-btn">Показать</a>
+                <div class="price-filter-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                  <button class="btn-transparent" type="submit">Показать</button>
             </div>
         </div>
         <div class="assortment-top">
@@ -62,14 +71,14 @@
             <div class="assortment">
             <span class="sortment">Сортировка:</span>
             <ul>
-                <li><a href="#">По цене</a></li>
+                <li>По цене</li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По рейтингу</a></li>
             </ul>
         </div>
         <div class="assortment-arrows">
-            <img src="img/arrow-down.png" alt="">
-            <img src="img/arrow-up.png" alt="">
+            <button class="arrow-sort-asc"></button>
+            <button class="arrow-sort-desc"></button>
         </div>
         </div>
         <div class="filtered-items">
@@ -82,17 +91,17 @@
                     <div class="place-block">
                         <div class="left-block">
                             <span>Гостиница</span>
-                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn-detail"><span class="opacity-text">Подробнее</span></a>
                         </div>
                         <div class="right-block">
                             <span>От 4000 р.</span>
-                            <a href="#" class="btn">Забронировать</a>
+                            <a href="#" class="btn-order"><span class="opacity-text">Забронировать</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="rating">
                     <img src="img/four-stars.png" alt="rating star"><br>
-                    <span>Рейтинг 8,5</span>
+                    <span>Рейтинг: 8,5</span>
                 </div>
             </div>
             <div class="filtered-item">
@@ -104,17 +113,17 @@
                     <div class="place-block">
                         <div class="left-block">
                             <span>Мотель</span>
-                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn-detail"><span class="opacity-text">Подробнее</span></a>
                         </div>
                         <div class="right-block">
                             <span>От 3000 р.</span>
-                            <a href="#" class="btn">Забронировать</a>
+                            <a href="#" class="btn-order"><span class="opacity-text">Забронировать</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="rating">
                     <img src="img/three-stars.png" alt="rating star"><br>
-                    <span>Рейтинг 8,9</span>
+                    <span>Рейтинг: 8,9</span>
                 </div>
             </div>
             <div class="filtered-item">
@@ -126,17 +135,17 @@
                     <div class="place-block">
                        <div class="left-block">
                             <span>Апартаменты</span>
-                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn-detail"><span class="opacity-text">Подробнее</span></a>
                         </div>
                         <div class="right-block">
                             <span>От 2000 р.</span>
-                            <a href="#" class="btn">Забронировать</a>
+                            <a href="#" class="btn-order"><span class="opacity-text">Забронировать</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="rating">
                     <img src="img/two-stars.png" alt="rating star"><br>
-                    <span>Рейтинг 9,2</span>
+                    <span>Рейтинг: 9,2</span>
                 </div>
             </div>
         </div>
@@ -144,18 +153,19 @@
     <footer class="main-footer container">
         <div class="main-footer-layout">
             <section class="our-hashtag">
-                #VisitSedona
+                <a href="#">#VisitSedona</a>
             </section>
             <section class="social-networks">   
-                <a href="#" class="social-btn social-btn-tw">Твиттер</a>
-                <a href="#" class="social-btn social-btn-fb">Фэйсбук</a>
-                <a href="#" class="social-btn social-btn-youtube">Youtube</a>
+                <a href="" class="social-btn social-btn-tw">Твиттер</a>
+                <a href="" class="social-btn social-btn-fb">Фэйсбук</a>
+                <a href="" class="social-btn social-btn-youtube">Youtube</a>
             </section>
             <section class="copyright">
-                Website by
-                <img src="img/htmlacademy.png" alt="HTML Academy">
+                <span>Website by</span>
+                <a href="#"></a>
             </section>
         </div>
     </footer>
+    </div>
 </body>
 </html>
