@@ -173,6 +173,12 @@ button:focus {
 .picture-heading {
     padding-top: 53px;
     padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.picture-heading, 
+.advantages-heading {
+    width: 130px;
 }
 
 .text-second-heading {
