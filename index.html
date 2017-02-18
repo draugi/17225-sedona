@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <title>Седона</title>
     <link rel="stylesheet" href=css/normalize.css>
-    <link rel="stylesheet" href=css/style.css>
+    <link rel="stylesheet" href=css/min.style.css>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <div class="container-wrapper">
-    <header class="main-header">
-        <div class="main-header-layout container">
-            <nav class="main-navigation">
-                <ul class="main-navigation-list">
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и видео</a></li>
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a href="hotels.html">Гостиницы</a></li>
-                </ul>
-                <a href="index.html" class="header-logo">
-                	<img src="img/header-logo.png" alt="City of Sedona" width="138" height="70">
-                </a>
-            </nav>
-        </div>
-    </header>
+        <header class="main-header">
+            <div class="main-header-layout container">
+                <nav class="main-navigation">
+                    <ul class="main-navigation-list">
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Фото и видео</a></li>
+                        <li><a href="#">Карта штата</a></li>
+                        <li><a href="hotels.html">Гостиницы</a></li>
+                    </ul>
+                    <a href="index.html" class="header-logo">
+                	    <img src="img/header-logo.png" alt="City of Sedona" width="138" height="70">
+                    </a>
+                </nav>
+            </div>
+        </header>
     <main class="container">
         <div class="main-background">
             <img src="img/main-background.jpg" alt="Welcome to the gorgeous Sedona!" class="sedona-logo" width="1200" height="508">
-       <div class="background-writing">
+        <div class="background-writing">
             <img src="img/welcome-pic.png" alt="background-writing" width="458" height="352">
         </div>
         <div class="white-mask">
@@ -159,15 +159,7 @@
         </div>
     </footer>
     </div>
-    <script>
-           var link = document.querySelector(".search-btn");
-           var popup = document.querySelector(".search-window");
-
-           link.addEventListener("click", function(event) {
-                event.preventDefault();
-                popup.classList.toggle("search-window-show");
-            });
-
+    <script src="js/min.script.js">
     </script>
 </body>
 </html>

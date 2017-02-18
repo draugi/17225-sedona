@@ -336,7 +336,7 @@ button:focus {
     margin-left: 15px;
     background: #f2f2f2;
     border: none;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -400,7 +400,7 @@ button:focus {
     width: 22px;
     height: 22px;
     display: inline-block;
-    background: url(../img/amount-sprite.png) no-repeat center;
+    background: url("../img/amount-sprite.png") no-repeat center;
     background-position: -5px 0px; 
 }
 
@@ -427,7 +427,7 @@ button:focus {
     width: 22px;
     height: 22px;
     display: inline-block;
-    background: url(../img/amount-sprite.png) no-repeat center;
+    background: url("../img/amount-sprite.png") no-repeat center;
     background-position: -5px -74px;
 }
 
@@ -547,7 +547,7 @@ button:focus {
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
-    background: url(../img/academy-sprite.png) -10px -128px no-repeat;
+    background: url("../img/academy-sprite.png") -10px -128px no-repeat;
     width: 113px;
     height: 39px; 
     margin-left: 8px;
@@ -562,10 +562,6 @@ button:focus {
 }
 
 /* Отели */
-
-#active-link {
-    color: #766357;
-}
 
 .infrastructure-block {
     width: 240px;
@@ -695,7 +691,7 @@ transform: translate(-50%, -50%);
     flex-direction: row;
     justify-content: space-between;
     padding: 26px 73px;
-    background-image: url(../img/background-filter-2.jpg);
+    background: #467ba5 url("../img/background-filter-2.jpg");
     background-size: cover;
 }
 
@@ -727,7 +723,7 @@ input[type="checkbox"] + label::before {
     display: block;
     width: 26px;
     height: 22px;
-    background: url(../img/checkbox-sprite.png) no-repeat;
+    background: url("../img/checkbox-sprite.png") no-repeat;
     background-position: -41px -5px;
     position: absolute;
     top: 0;
@@ -875,7 +871,6 @@ input[type="checkbox"]:checked + label::before {
     display: flex;
     width: 258px;
     text-align: left;
-    vertical-align: top;
 }
 
 .place-heading {
@@ -943,6 +938,7 @@ input[type="checkbox"]:checked + label::before {
 
 .opacity-text {
     display: inline-block;
+    vertical-align: top;
     width: 100%;
     height: 100%;
 }
