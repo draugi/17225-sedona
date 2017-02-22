@@ -135,7 +135,7 @@ button:focus {
     text-align: center;
 }
 
-.promo-block span {
+.promo-block h1 {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -156,8 +156,9 @@ button:focus {
 
 .heading {
     font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;  
+    line-height: 21px;
+    font-weight: 700; 
+    margin: 0;
 }
 
 .features-text-first {
@@ -173,6 +174,7 @@ button:focus {
     padding-top: 53px;
     padding-bottom: 20px;
     margin: 0 auto;
+    color: #fff;
 }
 
 .picture-heading, 
@@ -185,6 +187,7 @@ button:focus {
     margin: 0 auto;
     padding-top: 52px;
     padding-bottom: 15px;
+    color: #fff;
 }
 
 
@@ -260,10 +263,11 @@ button:focus {
     padding-top: 50px;
 }
 
-.find-us span {
+.find-us h2 {
     font-size: 30px;
     line-height: 24px;
     font-weight: 700;
+    margin: 0;
 }
 
 /* Блок поиска отелей */
